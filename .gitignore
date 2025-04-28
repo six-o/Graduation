@@ -1,0 +1,58 @@
+# === 通用忽略設定 ===
+# 作業系統自動產生的檔案
+.DS_Store
+Thumbs.db
+
+# IDE 設定檔
+.vscode/
+.idea/
+.fleet/
+*.iml
+*.iws
+
+# 暫存檔
+*.log
+*.tmp
+*.temp
+*.bak
+*.old
+*.swp
+*.swo
+
+# Git 設定檔（但不要忽略.git資料夾本身）
+.gitattributes
+
+# === 特別忽略 metadata ===
+.metadata/
+
+# === Java Maven 專案(Spring_MVC)相關 ===
+Spring_MVC/target/
+Spring_MVC/.classpath
+Spring_MVC/.project
+Spring_MVC/.settings/
+
+# Maven Wrapper 例外（保留maven-wrapper.jar）
+!Spring_MVC/.mvn/wrapper/maven-wrapper.jar
+
+# === Java Gradle 專案(demo)相關 ===
+demo/build/
+demo/.gradle/
+demo/.classpath
+demo/.project
+demo/.settings/
+demo/bin/
+
+# Gradle Wrapper 保留
+!demo/gradlew
+!demo/gradlew.bat
+
+# === Next.js 專案(next-app)相關 ===
+next-app/node_modules/
+next-app/.next/
+
+# 環境變數檔（Next.js）
+next-app/.env
+next-app/.env.local
+next-app/.env.development.local
+next-app/.env.production.local
+next-app/.env.test.local
